@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- *<p> Description: 描述信息 </p>
+ *<p> Description: 整合JSP页面跳转控制层 </p>
  *<p> Copyright: Copyright(c) 2018/11/1 </p>
  *<p> Company: 7qb </p>
  *
