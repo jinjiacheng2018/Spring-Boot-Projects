@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- *<p> Description: 实体类 </p>
+ *<p> Description: 学生实体类 </p>
  *<p> Copyright: Copyright(c) 2018/10/31 </p>
  *<p> Company: 7qb </p>
  *
