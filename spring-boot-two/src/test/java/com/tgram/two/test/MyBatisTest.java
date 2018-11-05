@@ -2,6 +2,7 @@ package com.tgram.two.test;
 
 import java.util.List;
 
+import com.tgram.two.service.StudentService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,9 @@ public class MyBatisTest {
 
     @Autowired
     private StudentDao studentDao;
+
+    @Autowired
+    private StudentService studentService;
 
     /**
      * 测试书库的连接：
@@ -73,5 +77,18 @@ public class MyBatisTest {
         long x1 = System.currentTimeMillis();
 
         System.out.println("------------------------>: " + (x1 - x));
+    }
+
+    /**
+     * 面向前面编程测试方法
+     */
+    @Test
+    public void test04(){
+        System.out.println("目标方法...");
+        List<Student> students = studentService.queryAllStudents();
+
+        students.forEach(student ->{
+            System.out.println(student);
+        });
     }
 }
