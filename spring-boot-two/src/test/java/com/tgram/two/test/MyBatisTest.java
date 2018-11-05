@@ -21,6 +21,7 @@ import com.tgram.two.entity.Student;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
+//@PropertySource(value = {"classpath:application.yml"})
 public class MyBatisTest {
 
     @Autowired
