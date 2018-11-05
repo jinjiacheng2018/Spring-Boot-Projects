@@ -80,7 +80,7 @@ public class MyBatisTest {
     }
 
     /**
-     * 面向前面编程测试方法
+     * 面向切面编程测试方法
      */
     @Test
     public void test04(){
