@@ -39,4 +39,39 @@ public class MyBatisTest {
             System.out.println(student);
         });
     }
+
+    @Test
+    public void test02(){
+        long x = System.currentTimeMillis();
+
+        if(1 != 1){
+            System.out.println("**1**");
+        }
+
+        if(1 != 2){
+            System.out.println("**2**");
+        }
+
+        for (int i=0;i<1000000;i++){}
+
+        long x1 = System.currentTimeMillis();
+
+        System.out.println("------------------------>: " + (x1 - x));
+    }
+
+    @Test
+    public void test03(){
+        long x = System.currentTimeMillis();
+
+        // 写在一起代码简洁，而且还会优化性能
+        if(1 != 1 || 1 != 2){
+            System.out.println("**3**");
+        }
+
+        for (int i=0;i<1000000;i++){}
+
+        long x1 = System.currentTimeMillis();
+
+        System.out.println("------------------------>: " + (x1 - x));
+    }
 }
