@@ -8,7 +8,7 @@
     </appender>
 
     <!--设置根级别-->
-    <root level="INFO">
+    <root level="ERROR">
         <appender-ref ref="stdout"/>
     </root>
 
