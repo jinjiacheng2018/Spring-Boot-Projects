@@ -9,3 +9,8 @@ spring:
     password: root
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+
+# 设置指定包的日志级别
+#logging:
+#  level:
+#    com.tgram.two.dao: debug
