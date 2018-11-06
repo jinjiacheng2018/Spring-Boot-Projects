@@ -2,11 +2,14 @@ package com.tgram.two.test;
 
 import java.util.List;
 
+import com.tgram.two.config.DBConfigClass;
 import com.tgram.two.service.StudentService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.ApplicationContext;
+import org.springframework.core.env.Environment;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.tgram.two.dao.StudentDao;
@@ -30,6 +33,12 @@ public class MyBatisTest {
 
     @Autowired
     private StudentService studentService;
+
+    @Autowired
+    private ApplicationContext applicationContext;
+
+    @Autowired
+    private DBConfigClass dbConfigClass;
 
     /**
      * 测试书库的连接：
@@ -90,5 +99,23 @@ public class MyBatisTest {
         students.forEach(student ->{
             System.out.println(student);
         });
+    }
+
+    @Test
+    public void test05(){
+        Environment environment = applicationContext.getBean(Environment.class);
+
+        String property = environment.getProperty("spring.datasource.username");
+        System.err.println("^_^ * ^_^" + property + "^_^ * ^_^");
+
+        System.out.println("---*_*----: " + environment + " :---*_*----");
+    }
+
+    /**
+     * 测试自定义配置类与属性文件进行绑定
+     */
+    @Test
+    public void test06(){
+        System.out.println(dbConfigClass);
     }
 }
