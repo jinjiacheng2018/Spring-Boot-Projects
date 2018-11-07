@@ -141,5 +141,30 @@
         </configuration>
       </plugin>
     </plugins>
+
+    <!-- 配置编译目录，将文件编译到指定的目录下，就可以在运行入口类的时候访问jsp页面 -->
+    <!--
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.xml</include>
+        </includes>
+      </resource>
+      <resource>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>**/*.xml</include>
+        </includes>
+      </resource>
+      <resource>
+        <directory>src/main/webapp</directory>
+        <targetPath>META-INF/resources</targetPath>
+        <includes>
+          <include>**/*.*</include>
+        </includes>
+      </resource>
+    </resources>
+    -->
   </build>
 </project>

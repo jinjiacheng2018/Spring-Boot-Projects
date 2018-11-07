@@ -57,7 +57,9 @@ public class WebConfig
             response.setContentType("text/html;charset=UTF-8");
             response.setCharacterEncoding("UTF-8");
             System.err.println("MyFilter doFilter method...");
-            filterChain.doFilter(servletRequest, servletResponse);
+
+            request.getRequestDispatcher("/static/index.html").forward(request,response);
+            // filterChain.doFilter(servletRequest, servletResponse);
         }
         
         @Override
