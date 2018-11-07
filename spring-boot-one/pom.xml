@@ -13,19 +13,6 @@
 
   <groupId>spring-boot-demo1</groupId>
   <artifactId>spring-boot-one</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <packaging>war</packaging>
-
-  <name>spring-boot-one Maven Webapp</name>
-  <url>http://www.example.com</url>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
-    <java.version>1.8</java.version>
-  </properties>
-
   <dependencies>
     <!-- 导入web启动器的依赖 -->
     <dependency>
@@ -60,6 +47,26 @@
       <artifactId>tomcat-embed-jasper</artifactId>
     </dependency>
 
+    <!-- 导入servlet-api相关的依赖 -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
+    </dependency>
+
+    <!-- 导入jstl、jsp相关的依赖 -->
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>javax.servlet.jsp-api</artifactId>
+      <version>2.3.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -67,6 +74,19 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <version>1.0-SNAPSHOT</version>
+
+  <packaging>war</packaging>
+  <name>spring-boot-one Maven Webapp</name>
+
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <java.version>1.8</java.version>
+  </properties>
 
   <build>
     <finalName>spring-boot-one</finalName>

@@ -1,6 +1,7 @@
 package com.tgram.one.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -16,9 +17,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class JspPageController {
 
     @RequestMapping(value = "/index")
-    public String indexJsp(){
-
-        System.out.println("***^_^***");
+    public String indexJsp(Model model){
+        // 添加属性
+        model.addAttribute("msg","Hello,SpringBoot include JSP !!!");
 
         return "success";
     }
