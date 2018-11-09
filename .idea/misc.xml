@@ -5,7 +5,7 @@
     <option name="formatter" value="ECLIPSE" />
     <option name="id" value="1534053199052" />
     <option name="name" value="default" />
-    <option name="pathToConfigFileJava" value="G:/开发软件/tools/IntelliJ IDEA 2018/Intellij IDEA安装插件步骤/IDEA_plugin/CodeFormatter_v1.1.xml" />
+    <option name="pathToConfigFileJava" value="E:/开发软件/tools/IntelliJ IDEA 2018/Intellij IDEA安装插件步骤/IDEA_plugin/CodeFormatter_v1.1.xml" />
     <option name="selectedJavaProfile" value="CodeFormatter" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/springbootone/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-two/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-one/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-three/pom.xml" />
       </list>
     </option>
   </component>

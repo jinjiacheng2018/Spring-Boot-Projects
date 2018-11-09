@@ -2,8 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/spring-boot-one" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-three" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-two" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot-two" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springbootone" charset="UTF-8" />
   </component>
 </project>
